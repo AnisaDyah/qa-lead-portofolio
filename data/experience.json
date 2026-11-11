@@ -1,0 +1,52 @@
+[
+  {
+    "period": "Mar 2025 — Present",
+    "role": "QA Engineer | Banking & Financial Systems",
+    "organization": "Banking sector",
+    "description": "Quality assurance activities for the Trade Finance module in an enterprise banking platform, covering SIT and UAT coordination across business flows.",
+    "responsibilities": [
+      "Coordinate test activities and distribute test cases by business flow, including Letter of Credit and Bank Guarantee processes.",
+      "Prepare test data, monitor execution progress, and review evidence against the defined test steps.",
+      "Compare environment-specific errors, document defects and supporting evidence in JIRA, and coordinate follow-up with stakeholders.",
+      "Validate UAT evidence and support daily coordination to keep testing aligned with the delivery plan."
+    ],
+    "tags": ["Trade Finance", "Temenos T24", "SIT", "UAT", "JIRA", "Test Coordination"]
+  },
+  {
+    "period": "Mar 2023 — Mar 2025",
+    "role": "QA Engineer / QA Process Lead",
+    "organization": "PT. ITPI Technology",
+    "description": "Helped establish QA operating practices while remaining hands-on in functional, integration, regression, smoke, and performance testing activities.",
+    "responsibilities": [
+      "Develop QA SOPs, documentation practices, defect tracking, dashboards, and stakeholder reporting routines.",
+      "Coordinate SIT, UAT, integration, regression, and smoke testing through go-live activities.",
+      "Perform performance testing with JMeter and communicate findings for technical follow-up.",
+      "Support consistent quality assessment and improve visibility of application quality across delivery activities."
+    ],
+    "tags": ["QA SOP", "QA Process", "JMeter", "SIT / UAT", "Defect Management", "Reporting"]
+  },
+  {
+    "period": "Oct 2021 — Mar 2023",
+    "role": "System Analyst",
+    "organization": "Software delivery projects",
+    "description": "Translated business needs into functional and technical requirements for web-based procurement and enterprise integration work.",
+    "responsibilities": [
+      "Analyze business requirements and prepare functional specifications, process documentation, and user guidance.",
+      "Work with .NET web applications and SAP integration through APIs, middleware, and data synchronization.",
+      "Support UAT, investigate data issues, and validate application behavior using PostgreSQL and SQL Server."
+    ],
+    "tags": ["System Analysis", ".NET", "SAP Integration", "API", "PostgreSQL", "SQL Server"]
+  },
+  {
+    "period": "Aug 2020 — Oct 2021",
+    "role": "Full-Stack Programmer",
+    "organization": "Software development projects",
+    "description": "Built and maintained web application components, developing a practical understanding of application behavior and technical implementation.",
+    "responsibilities": [
+      "Develop application features using PHP and .NET technologies.",
+      "Work with relational databases including SQL Server and PostgreSQL.",
+      "Collaborate on implementation, troubleshooting, and application maintenance."
+    ],
+    "tags": ["PHP", ".NET", "SQL Server", "PostgreSQL", "Web Development"]
+  }
+]

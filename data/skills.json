@@ -1,0 +1,38 @@
+[
+    {
+        "group": "QA Management",
+        "items": [
+            "Test Planning",
+            "Test Strategy",
+            "Resource Allocation",
+            "SIT/UAT Coordination",
+            "Defect Management",
+            "Risk Management",
+            "Quality Reporting"
+        ]
+    },
+    {
+        "group": "Testing & Tools",
+        "items": [
+            "Postman",
+            "Newman",
+            "JMeter",
+            "JIRA",
+            "API Testing",
+            "Integration Testing",
+            "Regression Testing"
+        ]
+    },
+    {
+        "group": "Development & Data",
+        "items": [
+            "PHP",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "SQL",
+            "REST API",
+            "Git"
+        ]
+    }
+]
