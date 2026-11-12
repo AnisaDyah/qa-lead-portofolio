@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/v4.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+<?php if (($page ?? '') === 'experience'): ?>
+    <link rel="stylesheet" href="assets/css/experience-timeline.css">
+<?php endif; ?>
 </head>
 <body>
 <div class="site-frame">

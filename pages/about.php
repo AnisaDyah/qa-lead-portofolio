@@ -28,7 +28,7 @@ $aboutStats = [
   <div><p class="eyebrow">ABOUT</p><h1>QA Engineer <span>Anisa Almahfudi.</span></h1>
   <strong style="margin-top:40px; color:#77756f">Quality Engineering · System Integration · QA Leadership</strong>
 </div>
-  <p class="intro-statement">Connecting the dots between business needs and software quality - Quality is not just a final check, It is built into every step.</span></p>
+  <p class="intro-statement">Connecting the dots between business needs and software quality - Building software quality through technical expertise, system understanding, and effective team leadership.</span></p>
 </section>
 <link rel="stylesheet" href="assets/css/style.css">
 <section class="about-highlights"

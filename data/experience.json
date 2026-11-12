@@ -1,52 +1,158 @@
+
 [
   {
-    "period": "Mar 2025 — Present",
-    "role": "QA Engineer | Banking & Financial Systems",
-    "organization": "Banking sector",
-    "description": "Quality assurance activities for the Trade Finance module in an enterprise banking platform, covering SIT and UAT coordination across business flows.",
+    "period": "April 2026 – Present",
+    "role": "Quality Assurance Lead",
+    "organization": "PT Permodalan Nasional Madani (PNM)",
+    "description": "Leading QA activities and coordinating testing across multiple enterprise projects, with responsibilities covering team management, testing strategy, quality governance, and production readiness.",
     "responsibilities": [
-      "Coordinate test activities and distribute test cases by business flow, including Letter of Credit and Bank Guarantee processes.",
-      "Prepare test data, monitor execution progress, and review evidence against the defined test steps.",
-      "Compare environment-specific errors, document defects and supporting evidence in JIRA, and coordinate follow-up with stakeholders.",
-      "Validate UAT evidence and support daily coordination to keep testing aligned with the delivery plan."
-    ],
-    "tags": ["Trade Finance", "Temenos T24", "SIT", "UAT", "JIRA", "Test Coordination"]
+    "Lead and coordinate **QA activities** across multiple enterprise projects, ensuring alignment with project objectives and quality standards.",
+    "Lead **Manual Testing** activities, including test planning, scenario design, test execution, regression testing, and UAT coordination.",
+    "Oversee **Test Automation** initiatives, including automation strategy, scenario preparation, and execution monitoring.",
+    "Prepare and manage **Postman Collections** for API Testing, including request configuration, test scripts, assertions, and validation of API functionality, request/response payloads, data mapping, and system integration.",
+    "Manage **Performance Testing** activities to evaluate system performance, stability, and scalability under different workloads.",
+    "Manage **QA team leadership**, including task allocation, workload distribution, progress monitoring, and team development.",
+    "Establish and maintain **QA standards, test documentation, and quality governance** across projects.",
+    "Coordinate with **cross-functional stakeholders, developers, business users, and vendors** to manage defects and resolve quality issues.",
+    "Review test results, evidence, and outstanding defects to provide **QA Sign-off and Production Deployment Recommendations**.",
+    "Drive **continuous improvement** in QA processes, testing efficiency, and release readiness."
+  ],
+    "tags": [
+      "QA Leadership",
+      "QA Strategy",
+      "Manual Testing",
+      "Test Automation",
+      "API Testing",
+      "Performance Testing",
+      "Team Management",
+      "Release Governance"
+    ]
   },
   {
-    "period": "Mar 2023 — Mar 2025",
-    "role": "QA Engineer / QA Process Lead",
+    "period": "March 2025 – March 2026",
+    "role": "QA Co-Lead",
+    "organization": "Bank Syariah Indonesia (BSI)",
+    "description": "Responsible for manual testing and test execution management for the Trade Finance module within the Temenos T24 Core Banking system.",
+    "responsibilities": [
+      "Performed **Manual Testing** for the Temenos T24 Core Banking system, focusing on the **Trade Finance module**, including Letter of Credit (LC) and Bank Guarantee.",
+      "Managed **Test Scenario Execution** across approximately 6,000 test scenarios.",
+      "Coordinated **Task Distribution and Workload Allocation** among team members based on daily priorities.",
+      "Monitored **Daily Testing Progress and Team Achievements** against planned targets.",
+      "Managed **Testing Timelines and Daily Execution Targets** for the assigned module.",
+      "Reviewed and **Validated Defects** before submitting formal tickets in JIRA, and subsequently coordinated **Defect Follow-up and Retesting** with developers.",
+      "Achieved a **50% reduction in UAT execution time**, completing testing in 2 months instead of the planned 4 months through optimized task management, **efficient workload distribution**, and comprehensive SIT execution that **enabled early defect identification** and smoother UAT.",
+      "Developed and maintained **JIRA Dashboards** to provide stakeholders with real-time visibility into testing progress, daily achievements, outstanding defects, and execution targets, **supporting effective project monitoring and decision-making.**"
+    ],
+    "tags": [
+      "Timeline Optimization",
+      "Manual Testing",
+      "Temenos T24",
+      "Trade Finance",
+      "SIT",
+      "UAT",
+      "Task Distribution",
+      "Timeline Management",
+      "Defect Validation",
+      "JIRA"
+    ]
+  },
+  {
+    "period": "March 2023 – March 2025",
+    "role": "Quality Assurance Lead",
     "organization": "PT. ITPI Technology",
-    "description": "Helped establish QA operating practices while remaining hands-on in functional, integration, regression, smoke, and performance testing activities.",
+    "description": "Established the Quality Assurance function from scratch, building QA processes, standards, and operational workflows while leading a QA team and managing testing activities across multiple software projects.",
     "responsibilities": [
-      "Develop QA SOPs, documentation practices, defect tracking, dashboards, and stakeholder reporting routines.",
-      "Coordinate SIT, UAT, integration, regression, and smoke testing through go-live activities.",
-      "Perform performance testing with JMeter and communicate findings for technical follow-up.",
-      "Support consistent quality assessment and improve visibility of application quality across delivery activities."
-    ],
-    "tags": ["QA SOP", "QA Process", "JMeter", "SIT / UAT", "Defect Management", "Reporting"]
+     "Established and formalized the **Quality Assurance (QA) function from scratch**, introducing structured testing practices into the Software Development Lifecycle (SDLC).",
+  "Developed **QA Strategies, Testing Standards, SOPs, and KPIs** to establish consistent quality assurance practices.",
+  "Built and managed a **QA Team**, overseeing task distribution, workload allocation, and testing activities across multiple projects.",
+  "Created and maintained **Test Plans, Test Scenarios, Test Cases, and Test Reports** across software projects.",
+  "Led and executed **Functional Testing** to validate application functionality and business requirements.",
+  "Personally handled **System Integration Testing**, validating data exchange, API communication, and interactions between integrated systems.",
+  "Independently planned and executed **Performance Testing** to evaluate application response time, stability, and performance under different workloads.",
+  "Managed **Defect Tracking and Resolution**, collaborating with developers to ensure timely issue resolution.",
+  "Coordinated **Cross-functional Collaboration** to align testing objectives with business requirements.",
+  "Monitored **QA Performance and Quality Metrics** to evaluate testing effectiveness and drive continuous improvement."
+],
+    "tags": [
+    "QA Function Establishment",
+    "QA Leadership",
+    "QA Strategy",
+    "Testing Standards",
+    "SOP Development",
+    "Test Management",
+    "Functional Testing",
+    "Integration Testing",
+    "Regression Testing",
+    "Defect Management",
+    "Cross-functional Collaboration",
+    "Quality Metrics",
+    "Quality Governance",
+    "Process Improvement"
+    ]
   },
   {
-    "period": "Oct 2021 — Mar 2023",
+    "period": "October 2021 – March 2023",
     "role": "System Analyst",
-    "organization": "Software delivery projects",
-    "description": "Translated business needs into functional and technical requirements for web-based procurement and enterprise integration work.",
+    "organization": "PT. ITPI Technology",
+    "description": "Translated business requirements into technical specifications and system designs, supporting development and system integration activities.",
     "responsibilities": [
-      "Analyze business requirements and prepare functional specifications, process documentation, and user guidance.",
-      "Work with .NET web applications and SAP integration through APIs, middleware, and data synchronization.",
-      "Support UAT, investigate data issues, and validate application behavior using PostgreSQL and SQL Server."
-    ],
-    "tags": ["System Analysis", ".NET", "SAP Integration", "API", "PostgreSQL", "SQL Server"]
+    "Analyzed **Business Requirements** and translated business needs into functional and technical specifications.",
+    "Conducted **Business Process Analysis** to identify workflows, system requirements, and opportunities for improvement.",
+    "Prepared **System Design Specifications, Functional Documents, and Technical Blueprints** as development references.",
+    "Designed **Database Structures and Data Models**, defining relationships, data attributes, and data requirements to support application development.",
+    "Designed and documented **Data Flows and System Integration Workflows**, defining data exchanges between applications and integrated systems.",
+    "Performed **Integration Validation** to verify data mapping, data consistency, and communication between interconnected systems, including SAP-related integrations.",
+    "Prepared and delivered **Technical Specifications and Development Tasks** to developers, ensuring clear implementation requirements and expected outcomes.",
+    "Coordinated with **developers and stakeholders** throughout the development lifecycle to clarify requirements and resolve implementation issues.",
+    "Monitored **Development Progress and Task Completion**, providing regular status updates and reporting project progress to stakeholders.",
+    "Designed **UAT Scenarios and Test Documentation** to support system validation and business acceptance.",
+    "Performed **System Testing and Functional Validation** to verify implemented features against business requirements.",
+    "Prepared **User Manuals and System Documentation** to support implementation and end-user adoption."],
+    "tags": [
+    "Business Analysis",
+    "Requirement Engineering",
+    "System Design",
+    "Database Design",
+    "Data Modeling",
+    "Data Flow Design",
+    "System Integration",
+    "Integration Validation",
+    "SAP Integration",
+    "Technical Documentation",
+    "Developer Coordination",
+    "Task Management",
+    "Progress Reporting",
+    "System Testing",
+    "UAT Preparation",
+    "Stakeholder Collaboration"
+    ]
   },
   {
-    "period": "Aug 2020 — Oct 2021",
-    "role": "Full-Stack Programmer",
-    "organization": "Software development projects",
-    "description": "Built and maintained web application components, developing a practical understanding of application behavior and technical implementation.",
+    "period": "August 2020 – October 2021",
+    "role": "Full-Stack Developer",
+    "organization": "PT. ITPI Technology",
+    "description": "Developed and maintained web-based applications, handling frontend and backend functionality, database development, and application maintenance throughout the Software Development Lifecycle.",
     "responsibilities": [
-      "Develop application features using PHP and .NET technologies.",
-      "Work with relational databases including SQL Server and PostgreSQL.",
-      "Collaborate on implementation, troubleshooting, and application maintenance."
-    ],
-    "tags": ["PHP", ".NET", "SQL Server", "PostgreSQL", "Web Development"]
+     "Developed and maintained **Web-based Applications** based on business and functional requirements.",
+    "Implemented **Backend Development** using PHP and .NET technologies.",
+    "Designed and managed **Database Structures and Queries** using PostgreSQL and SQL Server.",
+    "Developed application features, business logic, and **System Functionalities** across frontend and backend components.",
+    "Performed **Application Debugging and Troubleshooting** to identify and resolve technical issues.",
+    "Collaborated with **System Analysts and Development Teams** throughout the Software Development Lifecycle (SDLC).",
+    "Worked in an **Agile Scrum Environment**, participating in sprint planning, daily stand-ups, sprint reviews, and team collaboration to deliver development tasks.",
+    "Supported **Application Testing, Bug Fixing, and System Improvements** to maintain software quality."
+  ],
+    "tags": [
+    "Full-Stack Development",
+    "Web Application Development",
+    "PHP",
+    ".NET",
+    "Database Design",
+    "PostgreSQL",
+    "SQL Server",
+    "Debugging & Troubleshooting",
+    "SCRUM",
+    "Bug Fixing"
+    ]
   }
 ]

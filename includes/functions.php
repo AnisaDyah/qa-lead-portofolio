@@ -33,3 +33,22 @@ function nav_is_active(string $current, string $target): string
 {
     return $current === $target ? ' is-active' : '';
 }
+
+
+function render_markdown(string $text): string
+{
+    // Escape HTML first to prevent unsafe HTML injection.
+    $safeText = htmlspecialchars(
+        $text,
+        ENT_QUOTES | ENT_SUBSTITUTE,
+        'UTF-8'
+    );
+
+    // Convert **text** into bold HTML.
+    return preg_replace(
+        '/\*\*(.+?)\*\*/',
+        '<strong>$1</strong>',
+        $safeText
+    ) ?? $safeText;
+}
+

@@ -1,0 +1,327 @@
+/* Experience timeline V1 — expandable / collapsible editorial timeline */
+
+:root {
+    --timeline-paper: #f5f3ef;
+    --timeline-ink: #191919;
+    --timeline-muted: #77736d;
+    --timeline-rule: #d8d4cd;
+    --timeline-marker: #222;
+}
+
+.page-intro {
+    margin: 12px 0 42px;
+}
+
+.page-intro .eyebrow,
+.experience-summary .eyebrow {
+    color: var(--timeline-muted);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.page-intro h1 {
+    max-width: 760px;
+    margin: 12px 0 10px;
+    color: var(--timeline-ink);
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(34px, 4.5vw, 56px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.06;
+}
+
+.page-intro h1 span {
+    color: #8b877f;
+}
+
+.page-intro .lead {
+    max-width: 650px;
+    color: var(--timeline-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Timeline frame */
+.timeline.panel {
+    max-width: 1040px;
+    padding: 22px 0 8px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr);
+    column-gap: 22px;
+    position: relative;
+    padding: 0 0 30px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 9px;
+    bottom: -9px;
+    left: 5px;
+    width: 1px;
+    background: var(--timeline-rule);
+}
+
+/* Timeline marker */
+.timeline-marker {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin: 4px 0 0;
+    border: 2px solid var(--timeline-paper);
+    border-radius: 50%;
+    outline: 1px solid var(--timeline-marker);
+    background: var(--timeline-marker);
+}
+
+/* Native details/summary gives click, keyboard, and no-JavaScript interaction */
+.experience-details {
+    min-width: 0;
+    border-bottom: 1px solid #e2ded7;
+}
+
+.timeline-item:last-child .experience-details {
+    border-bottom: 0;
+}
+
+.experience-summary {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0 0 24px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.experience-summary::-webkit-details-marker {
+    display: none;
+}
+
+.experience-summary::marker {
+    content: "";
+}
+
+.experience-heading {
+    min-width: 0;
+}
+
+.experience-summary h2 {
+    margin: 8px 0 9px;
+    color: var(--timeline-ink);
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(20px, 2.4vw, 27px);
+    font-weight: 750;
+    letter-spacing: -0.7px;
+    line-height: 1.25;
+}
+
+.experience-summary p {
+    max-width: 760px;
+    margin: 0;
+    color: #625e58;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.meta-separator {
+    padding: 0 5px;
+    color: #b1aca3;
+}
+
+/* Expand / collapse affordance */
+.experience-toggle {
+    position: relative;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    margin-top: 26px;
+    border: 1px solid #d8d4cd;
+    border-radius: 50%;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.experience-toggle::before,
+.experience-toggle::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    width: 12px;
+    height: 1px;
+    background: #292929;
+    transition: transform .2s ease;
+}
+
+.experience-toggle::after {
+    transform: rotate(90deg);
+}
+
+.experience-details[open] .experience-toggle {
+    background: #191919;
+    border-color: #191919;
+}
+
+.experience-details[open] .experience-toggle::before {
+    background: #fff;
+}
+
+.experience-details[open] .experience-toggle::after {
+    background: #fff;
+    transform: rotate(0);
+}
+
+.experience-summary:hover .experience-toggle {
+    border-color: #191919;
+}
+
+.experience-summary:focus-visible {
+    outline: 2px solid #77736d;
+    outline-offset: 5px;
+}
+
+/* Expanded content */
+.experience-details-content {
+    padding: 0 58px 26px 0;
+    animation: experience-reveal .22s ease-out;
+}
+
+.experience-responsibilities {
+    list-style: none;
+    margin: 0 0 22px;
+    padding: 0;
+}
+
+.experience-responsibilities li {
+    position: relative;
+    margin: 0 0 11px;
+    padding-left: 18px;
+    color: #55514b;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.experience-responsibilities li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #aaa59c;
+}
+
+.experience-responsibilities strong {
+    color: #191919;
+    font-weight: 700;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.tag-list span {
+    display: inline-block;
+    padding: 7px 11px;
+    border: 1px solid #dedbd4;
+    border-radius: 2px;
+    color: #68645e;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: .04em;
+}
+
+@keyframes experience-reveal {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .experience-toggle,
+    .experience-toggle::before,
+    .experience-toggle::after {
+        transition: none;
+    }
+
+    .experience-details-content {
+        animation: none;
+    }
+}
+
+/* Tablet and mobile */
+@media (max-width: 680px) {
+    .page-intro {
+        margin-bottom: 28px;
+    }
+
+    .page-intro h1 {
+        font-size: clamp(31px, 9vw, 42px);
+        letter-spacing: -1.5px;
+    }
+
+    .timeline.panel {
+        padding-top: 12px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 15px minmax(0, 1fr);
+        column-gap: 15px;
+        padding-bottom: 25px;
+    }
+
+    .timeline-item:not(:last-child)::before {
+        left: 5px;
+    }
+
+    .experience-summary {
+        gap: 12px;
+        padding-bottom: 20px;
+    }
+
+    .experience-summary h2 {
+        font-size: 20px;
+    }
+
+    .experience-summary p {
+        font-size: 12px;
+    }
+
+    .experience-toggle {
+        flex-basis: 29px;
+        width: 29px;
+        height: 29px;
+        margin-top: 22px;
+    }
+
+    .experience-toggle::before,
+    .experience-toggle::after {
+        top: 13px;
+        left: 8px;
+        width: 11px;
+    }
+
+    .experience-details-content {
+        padding: 0 0 22px;
+    }
+
+    .experience-responsibilities li {
+        font-size: 12px;
+    }
+}
