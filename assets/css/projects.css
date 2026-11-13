@@ -1,0 +1,23 @@
+/* Phase 4 — Editorial V4 project page with soft bookmark role navigation. */
+.projects-page{--paper:#f8f7f3;--ink:#192338;--muted:#8d8982;--copy:#5e5b56;--blue-muted:#7888a2;--rust:#a95e46;--soft:#eeece7;--rule:rgba(25,35,56,.10);max-width:1180px;margin:0 auto;color:var(--ink);font-family:'DM Sans',sans-serif}
+.role-bookmarks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:end;gap:8px;padding:0 10px;position:relative;z-index:1}
+.role-bookmark{appearance:none;border:0;min-height:62px;padding:14px 22px 13px;display:flex;align-items:center;justify-content:center;gap:13px;color:#77736d;background:#eeece7;border-radius:17px 17px 0 0;cursor:pointer;font:700 13px 'DM Sans',sans-serif;position:relative;transition:background .22s ease,color .22s ease,transform .22s ease}
+.role-bookmark:hover:not(.is-active){background:#e9e6df;color:var(--ink)}
+.role-bookmark:focus-visible{outline:3px solid rgba(25,35,56,.24);outline-offset:3px}
+.role-bookmark.is-active{color:#fff;background:var(--ink);transform:translateY(1px);z-index:2}
+.bookmark-icon{width:15px;height:21px;flex:0 0 auto;fill:currentColor;opacity:.48}.role-bookmark.is-active .bookmark-icon{opacity:1}
+.bookmark-number{font:800 21px/1 'Manrope',sans-serif;letter-spacing:-.8px}.bookmark-label{white-space:nowrap;letter-spacing:-.15px}
+.projects-content-panel{position:relative;z-index:2;background:var(--paper);border-radius:17px;padding:clamp(28px,4.2vw,54px) clamp(24px,4.4vw,58px) 35px;margin-top:-1px;box-shadow:0 15px 45px rgba(30,35,45,.035);min-height:650px}
+.projects-intro{padding-bottom:26px}.projects-intro .eyebrow{color:#8492aa;font-size:10px;letter-spacing:1.7px;font-weight:800;margin-bottom:19px}
+.projects-intro h2{color:var(--ink);font:800 clamp(38px,5.2vw,64px)/.99 'Manrope',sans-serif;letter-spacing:-3.6px;margin:0}.projects-intro h2 span{color:var(--muted)}
+.projects-lead{max-width:620px;color:var(--copy);font-size:14px;line-height:1.75;margin:24px 0 0}.role-intro{color:var(--blue-muted);font-size:12px;line-height:1.65;margin:13px 0 0;max-width:760px}
+.project-case-list{border-top:1px solid var(--rule)}.project-case{display:grid;grid-template-columns:minmax(175px,27%) minmax(0,1fr);column-gap:28px;padding:27px 0 31px;border-bottom:1px solid var(--rule);animation:projectFadeIn .28s ease both}
+.project-case-meta{display:flex;align-items:baseline;flex-wrap:wrap;gap:14px;padding-top:4px}.case-code{color:var(--rust);font-size:11px;font-weight:800;white-space:nowrap}.case-type{color:var(--blue-muted);font-size:11px;line-height:1.5}
+.project-case-body h3{color:var(--ink);font:800 23px/1.2 'Manrope',sans-serif;letter-spacing:-.8px;margin:0 0 10px}.case-summary,.case-detail p{color:var(--copy);font-size:12px;line-height:1.7;margin:0}
+.case-detail{margin-top:17px}.case-detail h4{color:var(--ink);font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin:0 0 5px}.case-detail ul{color:var(--copy);font-size:12px;line-height:1.7;margin:0;padding-left:18px}.case-detail li{padding-left:1px;margin:1px 0}
+.project-tech-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.project-tech-tags span{display:inline-flex;align-items:center;min-height:27px;padding:5px 10px;border-radius:20px;background:#eeece7;color:#68768d;font-size:9px;font-weight:600}
+.projects-disclaimer{color:var(--blue-muted);font-size:10px;line-height:1.65;max-width:760px;margin:24px 0 0}
+@keyframes projectFadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){.role-bookmark{padding-inline:12px;gap:9px}.bookmark-number{font-size:18px}.bookmark-label{font-size:11px}.project-case{grid-template-columns:minmax(135px,24%) minmax(0,1fr);gap:20px}}
+@media(max-width:620px){.role-bookmarks{gap:5px;padding:0 3px}.role-bookmark{min-height:58px;padding:10px 5px 9px;border-radius:12px 12px 0 0;flex-direction:column;gap:4px}.bookmark-icon{width:11px;height:15px}.bookmark-number{display:none}.bookmark-label{font-size:9px;line-height:1.15;white-space:normal;text-align:center}.projects-content-panel{padding:27px 19px 25px;border-radius:12px;min-height:0}.projects-intro{padding-bottom:22px}.projects-intro .eyebrow{font-size:9px;margin-bottom:15px}.projects-intro h2{font-size:clamp(34px,10vw,47px);letter-spacing:-2.2px}.projects-lead{font-size:12px;margin-top:17px}.role-intro{font-size:11px}.project-case{grid-template-columns:1fr;gap:13px;padding:22px 0 25px}.project-case-meta{gap:11px}.project-case-body h3{font-size:20px}.case-summary,.case-detail p,.case-detail ul{font-size:11px}.projects-disclaimer{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.role-bookmark,.project-case{transition:none;animation:none}}
