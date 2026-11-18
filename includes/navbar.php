@@ -13,6 +13,7 @@
         <a href="index.php?page=documentation" class="<?= $page === 'documentation' ? 'active' : '' ?>"><span>04</span> Documentation</a>
       </div>
     </div>
+    <a href="index.php?page=guestbook" class="<?= $page === 'guestbook' ? 'active' : '' ?>">REVIEW</a>
     <a href="index.php?page=contact" class="<?= $page === 'contact' ? 'active' : '' ?>">CONTACT</a>
   </nav>
 </header>

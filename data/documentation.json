@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "code": "TP",
+      "title": "Test Plan",
+      "description": "Scope, objectives, approach, environment, schedule, risks, dependencies, and exit criteria.",
+      "status": "Sample / planned",
+      "status_class": "planned",
+      "evidence": [
+        { "label": "Overview", "image": "assets/images/documentation/test-plan/overview.png" },
+        { "label": "Test strategy", "image": "assets/images/documentation/test-plan/strategy.jpg" },
+        { "label": "Test metrics", "image": "assets/images/documentation/test-plan/metrics.jpg" }
+      ],
+      "file": "assets/documents/documentation/test-plan.pdf",
+      "file_label": "Download sample Test Plan",
+      "file_type": "PDF"
+    },
+    {
+      "code": "TC",
+      "title": "Test Scenarios & Cases",
+      "description": "Business-flow coverage, preconditions, test data, execution steps, expected results, and traceability.",
+      "status": "Sample / planned",
+      "status_class": "planned",
+      "evidence": [
+        { "label": "Scenario register", "image": "assets/images/documentation/test-cases/scenario-register.jpg" },
+        { "label": "Test steps", "image": "assets/images/documentation/test-cases/test-steps.jpg" },
+        { "label": "Execution results", "image": "assets/images/documentation/test-cases/execution-results.jpg" }
+      ],
+      "file": "assets/documents/documentation/test-scenarios.xlsx",
+      "file_label": "Download sample Test Scenarios",
+      "file_type": "XLSX"
+    },
+    {
+      "code": "DR",
+      "title": "Defect Reports",
+      "description": "Reproducible steps, actual and expected results, severity, priority, evidence, and retest status.",
+      "status": "Sample / planned",
+      "status_class": "planned",
+      "evidence": [
+        { "label": "Defect register", "image": "assets/images/documentation/defects/defect-register.jpg" },
+        { "label": "Defect detail", "image": "assets/images/documentation/defects/defect-detail.jpg" }
+      ],
+      "file": "assets/documents/documentation/defect-reports.xlsx",
+      "file_label": "Download sample Defect Report",
+      "file_type": "XLSX"
+    },
+    {
+      "code": "TS",
+      "title": "Test Summary Reports",
+      "description": "Execution status, pass/fail trends, defect position, residual risks, and recommendations.",
+      "status": "Sample / planned",
+      "status_class": "planned",
+      "evidence": [
+        { "label": "Execution summary", "image": "assets/images/documentation/test-summary/execution-summary.jpg" },
+        { "label": "Final assessment", "image": "assets/images/documentation/test-summary/final-assessment.jpg" }
+      ],
+      "file": "assets/documents/documentation/test-summary-report.pdf",
+      "file_label": "Download sample Test Summary",
+      "file_type": "PDF"
+    },
+    {
+      "code": "RT",
+      "title": "Risk & Issue Tracking",
+      "description": "Testing dependencies, environment constraints, blockers, owners, mitigation, and follow-up actions.",
+      "status": "Sample / planned",
+      "status_class": "planned",
+      "evidence": [
+        { "label": "Risk register", "image": "assets/images/documentation/risk-tracking/risk-register.jpg" },
+        { "label": "Issue log", "image": "assets/images/documentation/risk-tracking/issue-log.jpg" }
+      ],
+      "file": "assets/documents/documentation/risk-issue-tracker.xlsx",
+      "file_label": "Download sample Risk & Issue Tracker",
+      "file_type": "XLSX"
+    },
+    {
+      "code": "API",
+      "title": "API Test Collections",
+      "description": "Request examples, positive and negative cases, reusable assertions, and execution results.",
+      "status": "Sample / planned",
+      "status_class": "planned",
+      "evidence": [
+        { "label": "Postman collection", "image": "assets/images/documentation/api/collection.jpg" },
+        { "label": "Assertions and results", "image": "assets/images/documentation/api/assertions.jpg" }
+      ],
+      "file": "assets/documents/documentation/api-test-collection.json",
+      "file_label": "Download sample API Collection",
+      "file_type": "JSON"
+    }
+  ]
+}

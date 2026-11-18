@@ -13,6 +13,9 @@
 <?php if (($page ?? '') === 'experience'): ?>
     <link rel="stylesheet" href="assets/css/experience-timeline.css">
 <?php endif; ?>
+<?php if (($page ?? '') === 'documentation'): ?>
+    <link rel="stylesheet" href="assets/css/documentation.css">
+<?php endif; ?>
 </head>
 <body>
 <div class="site-frame">
