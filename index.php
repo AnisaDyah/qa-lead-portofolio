@@ -2,7 +2,7 @@
 declare(strict_types=1);
 require_once __DIR__ . '/includes/functions.php';
 
-$allowedPages = ['about','experience','projects','qa-management','technical-skills','documentation','contact'];
+$allowedPages = ['about','experience','projects','project-detail','qa-management','technical-skills','documentation','contact'];
 $page = (string)($_GET['page'] ?? 'about');
 if (!in_array($page, $allowedPages, true)) {
     http_response_code(404);
@@ -15,7 +15,7 @@ $experience = load_json('experience.json');
 $pageTitles = [
  'about'=>'About','experience'=>'Experience','projects'=>'Projects',
  'qa-management'=>'Management','technical-skills'=>'Technical',
- 'documentation'=>'Documentation','contact'=>'Contact'
+ 'documentation'=>'Documentation','contact'=>'Contact', 'project-detail' => 'Project Details',
 ];
 $pageTitle = $pageTitles[$page] ?? 'Portfolio';
 require __DIR__ . '/includes/header.php';

@@ -1,0 +1,35 @@
+[
+  {
+    "code": "CASE-01",
+    "name": "Enterprise System Integration",
+    "category": "Integration Testing",
+    "filter": "integration",
+    "summary": "An anonymized integration-testing case study focused on validating data movement and processing across connected enterprise services.",
+    "challenge": "Multiple services and downstream systems exchange business data. A failure at one stage can affect the completeness or consistency of records further along the flow.",
+    "approach": "Map the end-to-end flow, identify validation points, prepare positive and negative test data, and verify processing results at the API, database, and log levels.",
+    "responsibilities": ["Review integration flows and dependencies", "Prepare test scenarios and data", "Validate API responses and database records", "Track defects with reproducible evidence"],
+    "skills": ["SIT", "API Testing", "SQL", "Data Validation", "Defect Management"]
+  },
+  {
+    "code": "CASE-02",
+    "name": "Trade Finance Quality Assurance",
+    "category": "Banking & Financial Systems",
+    "filter": "banking",
+    "summary": "An anonymized banking case study covering business-flow test distribution, SIT/UAT coordination, evidence validation, and defect follow-up for Trade Finance processes.",
+    "challenge": "Trade Finance workflows contain multiple business paths and dependencies. Testing requires clear scenario ownership, reliable test data, and consistent evidence review.",
+    "approach": "Organize test coverage by business flow, coordinate execution, prepare test data, monitor progress, compare environment behavior, and validate evidence against test steps.",
+    "responsibilities": ["Coordinate test case distribution by business flow", "Support SIT and UAT execution", "Review evidence and record defects in JIRA", "Communicate progress, blockers, and follow-up actions"],
+    "skills": ["SIT", "UAT", "Test Planning", "Trade Finance", "JIRA", "Stakeholder Coordination"]
+  },
+  {
+    "code": "CASE-03",
+    "name": "API & Data Validation",
+    "category": "API and Data Testing",
+    "filter": "api",
+    "summary": "A practical API-testing case study demonstrating request validation, reusable assertions, database checks, and execution reporting.",
+    "challenge": "API integrations need predictable validation for required fields, business rules, response structure, and the resulting data state.",
+    "approach": "Design one request per scenario, prepare valid and invalid payloads, add assertions for status and response content, and reconcile results with database records where applicable.",
+    "responsibilities": ["Build request collections in Postman", "Write JavaScript assertions for expected results", "Prepare positive, negative, and boundary test data", "Review execution output and document failures"],
+    "skills": ["Postman", "Newman", "JavaScript", "REST API", "SQL"]
+  }
+]

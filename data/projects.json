@@ -1,35 +1,1208 @@
 [
   {
-    "code": "CASE-01",
-    "name": "Enterprise System Integration",
-    "category": "Integration Testing",
-    "filter": "integration",
-    "summary": "An anonymized integration-testing case study focused on validating data movement and processing across connected enterprise services.",
-    "challenge": "Multiple services and downstream systems exchange business data. A failure at one stage can affect the completeness or consistency of records further along the flow.",
-    "approach": "Map the end-to-end flow, identify validation points, prepare positive and negative test data, and verify processing results at the API, database, and log levels.",
-    "responsibilities": ["Review integration flows and dependencies", "Prepare test scenarios and data", "Validate API responses and database records", "Track defects with reproducible evidence"],
-    "skills": ["SIT", "API Testing", "SQL", "Data Validation", "Defect Management"]
+    "id": "business-risk-analysis-expert-system-for-chicken-farm",
+    "no": 1,
+    "title": "Business Risk Analysis Expert System for Chicken Farm",
+    "roleCategory": "Developer",
+    "company": "Freelence",
+    "period": "Ags 2019 - Des 2019",
+    "category": "Agriculture / Expert System",
+    "summary": "A PHP expert system that applies Dempster-Shafer theory to assess potential profit and loss in chicken farming using current egg-price information.",
+    "scope": [
+      "Represent expert knowledge and business-risk evidence",
+      "Use current egg-price information as an input",
+      "Apply Dempster-Shafer evidence combination to assess potential profit and loss"
+    ],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not applicable / not documented",
+      "Pass rate: Not applicable / not documented",
+      "Test coverage: Not documented",
+      "Bug/fail management: Not documented"
+    ],
+    "tools": [
+      "PHP"
+    ],
+    "deliverables": [],
+    "visualization": "",
+    "skills": [
+      "PHP",
+      "Dempster-Shafer method",
+      "expert systems"
+    ]
   },
   {
-    "code": "CASE-02",
-    "name": "Trade Finance Quality Assurance",
-    "category": "Banking & Financial Systems",
-    "filter": "banking",
-    "summary": "An anonymized banking case study covering business-flow test distribution, SIT/UAT coordination, evidence validation, and defect follow-up for Trade Finance processes.",
-    "challenge": "Trade Finance workflows contain multiple business paths and dependencies. Testing requires clear scenario ownership, reliable test data, and consistent evidence review.",
-    "approach": "Organize test coverage by business flow, coordinate execution, prepare test data, monitor progress, compare environment behavior, and validate evidence against test steps.",
-    "responsibilities": ["Coordinate test case distribution by business flow", "Support SIT and UAT execution", "Review evidence and record defects in JIRA", "Communicate progress, blockers, and follow-up actions"],
-    "skills": ["SIT", "UAT", "Test Planning", "Trade Finance", "JIRA", "Stakeholder Coordination"]
+    "id": "decision-maker-app-for-east-kalimantan-police",
+    "no": 2,
+    "title": "Decision Maker App for East Kalimantan Police",
+    "roleCategory": "Developer",
+    "company": "Freelence",
+    "period": "Nov 2019 - Jan 2020",
+    "category": "Public Sector / Decision Support System",
+    "summary": "A PHP decision-support application that ranks candidates for Chief of Police in East Kalimantan using the MOORA method.",
+    "scope": [
+      "Define candidate alternatives and decision criteria",
+      "Apply the MOORA multi-criteria decision-making method",
+      "Calculate and compare candidate scores to support selection"
+    ],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not applicable / not documented",
+      "Pass rate: Not applicable / not documented",
+      "Test coverage: Not documented",
+      "Bug/fail management: Not documented"
+    ],
+    "tools": [
+      "PHP"
+    ],
+    "deliverables": [],
+    "visualization": "",
+    "skills": [
+      "PHP",
+      "MOORA",
+      "decision support systems"
+    ]
   },
   {
-    "code": "CASE-03",
-    "name": "API & Data Validation",
-    "category": "API and Data Testing",
-    "filter": "api",
-    "summary": "A practical API-testing case study demonstrating request validation, reusable assertions, database checks, and execution reporting.",
-    "challenge": "API integrations need predictable validation for required fields, business rules, response structure, and the resulting data state.",
-    "approach": "Design one request per scenario, prepare valid and invalid payloads, add assertions for status and response content, and reconcile results with database records where applicable.",
-    "responsibilities": ["Build request collections in Postman", "Write JavaScript assertions for expected results", "Prepare positive, negative, and boundary test data", "Review execution output and document failures"],
-    "skills": ["Postman", "Newman", "JavaScript", "REST API", "SQL"]
+    "id": "sistem-pakar-penyakit-kulit-sipaku",
+    "no": 3,
+    "title": "Sistem Pakar Penyakit Kulit (SIPAKU)",
+    "roleCategory": "Developer",
+    "company": "Freelence",
+    "period": "Mar 2020 - Jul 2020",
+    "category": "Healthcare / Expert System",
+    "summary": "A PHP-based expert system that supports skin-disease diagnosis by applying Forward Chaining to expert knowledge.",
+    "scope": [
+      "Represent expert knowledge about skin diseases",
+      "Process user-provided facts against the knowledge base",
+      "Apply Forward Chaining to infer and display a diagnostic result"
+    ],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not applicable / not documented",
+      "Pass rate: Not applicable / not documented",
+      "Test coverage: Not documented",
+      "Bug/fail management: Not documented"
+    ],
+    "tools": [
+      "PHP"
+    ],
+    "deliverables": [],
+    "visualization": "",
+    "skills": [
+      "PHP",
+      "Forward Chaining",
+      "expert systems"
+    ]
+  },
+  {
+    "id": "e-procurement-apllication-for-pt-waskita-beton-preacast-tbk",
+    "no": 4,
+    "title": "E-Procurement Apllication For PT. Waskita Beton Preacast, Tbk",
+    "roleCategory": "Developer",
+    "company": "PT. ITPI Technology",
+    "period": "Ags 2020 - Apr 2021",
+    "category": "Construction / E-Procurement",
+    "summary": "Full-stack development of an e-procurement application for PT Waskita Beton Precast, Tbk., using PHP and JavaScript.",
+    "scope": [
+      "Develop the application front end using JavaScript",
+      "Develop application back-end functionality using PHP",
+      "Support electronic procurement of supplies, work, and business services"
+    ],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not applicable / not documented",
+      "Pass rate: Not applicable / not documented",
+      "Test coverage: Not documented",
+      "Bug/fail management: Not documented"
+    ],
+    "tools": [
+      "PHP",
+      "JavaScript"
+    ],
+    "deliverables": [],
+    "visualization": "",
+    "skills": [
+      "Full-stack development",
+      "PHP",
+      "JavaScript",
+      "e-procurement"
+    ]
+  },
+  {
+    "id": "online-test-application-pt-jantra-group",
+    "no": 5,
+    "title": "Online Test Application - PT. Jantra Group",
+    "roleCategory": "Developer",
+    "company": "Freelence",
+    "period": "Oct 2022 - Des 2022",
+    "category": "Online Assessment Application",
+    "summary": "Development of an online test application for PT Jantra Group.",
+    "scope": [],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not applicable / not documented",
+      "Pass rate: Not applicable / not documented",
+      "Test coverage: Not documented",
+      "Bug/fail management: Not documented"
+    ],
+    "tools": [],
+    "deliverables": [],
+    "visualization": "",
+    "skills": []
+  },
+  {
+    "id": "e-procurement-apllication-for-pt-astra-ootparts-tbk",
+    "no": 6,
+    "title": "E-Procurement Apllication For PT. Astra ootparts, Tbk",
+    "roleCategory": "System Analyst",
+    "company": "PT. ITPI Technology",
+    "period": "Apr 2021 - Mar 2022",
+    "category": "Automotive / E-Procurement",
+    "summary": "System analysis for PT Astra Otoparts’ e-procurement application, focused on business workflow analysis.",
+    "scope": [
+      "Analyze business workflows for the e-procurement application",
+      "Identify process activities and hand-offs for documentation"
+    ],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not applicable / not documented",
+      "Pass rate: Not applicable / not documented",
+      "Test coverage: Not documented",
+      "Bug/fail management: Not documented"
+    ],
+    "tools": [],
+    "deliverables": [],
+    "visualization": "",
+    "skills": [
+      "System analysis",
+      "business workflow analysis"
+    ]
+  },
+  {
+    "id": "e-catalogue-apllication-for-pt-astra-ootparts-tbk",
+    "no": 7,
+    "title": "E-Catalogue Apllication For PT. Astra ootparts, Tbk",
+    "roleCategory": "System Analyst",
+    "company": "PT. ITPI Technology",
+    "period": "Mar 2022 - Mar 2023",
+    "category": "Automotive / E-Catalogue",
+    "summary": "System analysis for the e-catalogue application at PT Astra Otoparts, Tbk.",
+    "scope": [],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not applicable / not documented",
+      "Pass rate: Not applicable / not documented",
+      "Test coverage: Not documented",
+      "Bug/fail management: Not documented"
+    ],
+    "tools": [],
+    "deliverables": [],
+    "visualization": "",
+    "skills": []
+  },
+  {
+    "id": "e-procurement-application-for-pt-pancaran-maritim-transportindo",
+    "no": 8,
+    "title": "E-Procurement Application For PT. Pancaran Maritim Transportindo",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. ITPI Technology",
+    "period": "Mar 2023 - Des 2023",
+    "category": "Maritime / E-Procurement",
+    "summary": "Quality assurance for an e-procurement application, covering manual UI and functional testing, integration, regression, and API testing.",
+    "scope": [
+      "Manual UI testing",
+      "Functional, integration, and regression testing",
+      "API testing with Postman",
+      "Vendor Management System module (as documented in the portfolio)"
+    ],
+    "workflow": "QC Monitoring and planning → scenario/test-step preparation → manual and API execution → error reporting → regression retest.",
+    "metricsQa": [
+      "Total test cases: Not documented",
+      "Pass rate: 70% scenario success rate for the Vendor Management System module; QC progress was 40%",
+      "Test coverage: Vendor Management System module; partial, module-based QC while development continued",
+      "Bug/fail management: Errors were reported and prioritized with the project team; fixes were retested through regression testing"
+    ],
+    "tools": [
+      "Postman",
+      "Google Spreadsheets",
+      "Google Docs"
+    ],
+    "deliverables": [
+      "QC Monitoring",
+      "Test Plan",
+      "test scenarios and steps",
+      "Report Error List",
+      "QC progress dashboard/report."
+    ],
+    "visualization": "QA progress dashboard / module testing progress",
+    "skills": [
+      "Manual testing",
+      "UI testing",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "API testing",
+      "test planning",
+      "defect reporting"
+    ]
+  },
+  {
+    "id": "e-procurement-application-for-pt-toyota-motor-manufacturing-indonesia",
+    "no": 9,
+    "title": "E-Procurement Application For PT. Toyota Motor Manufacturing Indonesia",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. ITPI Technology",
+    "period": "Ags 2023 - Feb 2024",
+    "category": "Automotive / E-Procurement",
+    "summary": "Quality assurance for Toyota’s e-procurement application, including functional, integration, regression, and performance testing.",
+    "scope": [
+      "Manual functional testing",
+      "Integration and regression testing",
+      "Performance testing with JMeter",
+      "Prepare test scenarios from the module blueprint"
+    ],
+    "workflow": "QC planning and monitoring → blueprint-based scenario preparation → manual execution → defect reporting and fixing → regression retest → performance testing and reporting.",
+    "metricsQa": [
+      "Total test cases: 2,617 scenarios",
+      "Pass rate: 86% passed and 14% failed before fixes; overall weighted QC score improved from 65% to 81% after fixes and retesting",
+      "Test coverage: E-procurement modules defined in the project blueprint; exact module list not stated in the portfolio",
+      "Bug/fail management: Failed scenarios were addressed based on QC/PM priorities, followed by fixes and retesting"
+    ],
+    "tools": [
+      "JMeter",
+      "Google Spreadsheets",
+      "Google Docs"
+    ],
+    "deliverables": [
+      "QC Monitoring",
+      "Test Plan",
+      "test scenarios and steps",
+      "Report Error List",
+      "Performance Testing Summary Report",
+      "QC result report."
+    ],
+    "visualization": "QA metrics dashboard; performance testing summary",
+    "skills": [
+      "Functional testing",
+      "integration testing",
+      "regression testing",
+      "performance testing",
+      "JMeter",
+      "test planning",
+      "defect management"
+    ]
+  },
+  {
+    "id": "e-procurement-application-for-pt-astra-otoparts-tbk-change-request",
+    "no": 10,
+    "title": "E-Procurement Application For PT. Astra Otoparts, Tbk - Change Request",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. ITPI Technology",
+    "period": "Des 2024 - Mar 2025",
+    "category": "Automotive / E-Procurement Change Request",
+    "summary": "Quality assurance for e-procurement change requests across two modules, covering functional, integration, regression, and API testing.",
+    "scope": [
+      "Functional, integration, and regression testing",
+      "API testing with Postman",
+      "Testing across 2 modules and 33 sprints"
+    ],
+    "workflow": "Sprint/QC planning → scenario preparation → manual and API testing → defect reporting → fixes → regression retesting → test report.",
+    "metricsQa": [
+      "Total test cases: 205 scenarios across 2 modules and 33 sprints",
+      "Pass rate: 175/205 passed initially (85.4%); 30/30 initially failed scenarios were fixed before go-live",
+      "Test coverage: 2 modules across 33 sprints",
+      "Bug/fail management: 30 failed scenarios were fixed and verified through regression testing before Change Request go-live"
+    ],
+    "tools": [
+      "Trello",
+      "Postman",
+      "Google Spreadsheets"
+    ],
+    "deliverables": [
+      "QC Monitoring",
+      "test scenarios and steps",
+      "Report Error List",
+      "test result report."
+    ],
+    "visualization": "Change-request QA metrics / sprint progress",
+    "skills": [
+      "Manual testing",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "API testing",
+      "Postman",
+      "Trello"
+    ]
+  },
+  {
+    "id": "e-procurement-application-for-pt-trakindo-utama-change-request",
+    "no": 11,
+    "title": "E-Procurement Application For PT. Trakindo Utama - Change Request",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. ITPI Technology",
+    "period": "Nov 2024 - Mar 2025",
+    "category": "Industrial / E-Procurement Change Request",
+    "summary": "Quality assurance for e-procurement change requests in one module, covering functional, integration, regression, and API testing.",
+    "scope": [
+      "Functional, integration, and regression testing",
+      "API testing with Postman",
+      "Testing across 1 module and 42 sprints"
+    ],
+    "workflow": "Sprint/QC planning → scenario preparation → manual and API testing → defect reporting in Report Error List/Trello → fixes → regression retesting → test report.",
+    "metricsQa": [
+      "Total test cases: 181 scenarios across 1 module and 42 sprints",
+      "Pass rate: 127/181 passed initially (70.2%); 54/54 initially failed scenarios were fixed before go-live",
+      "Test coverage: 1 module across 42 sprints",
+      "Bug/fail management: 54 failed scenarios were fixed and verified through regression testing before Change Request go-live"
+    ],
+    "tools": [
+      "Trello",
+      "Postman",
+      "Google Spreadsheets"
+    ],
+    "deliverables": [
+      "QC Monitoring",
+      "test scenarios and steps",
+      "Report Error List",
+      "test result report."
+    ],
+    "visualization": "Change-request QA metrics / sprint progress",
+    "skills": [
+      "Manual testing",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "API testing",
+      "Postman",
+      "Trello"
+    ]
+  },
+  {
+    "id": "themenos-r24-trade-finance",
+    "no": 12,
+    "title": "Themenos R24 - Trade Finance",
+    "roleCategory": "Quality Assurance",
+    "company": "Bank Syariah Indonesia",
+    "period": "Mar 2025 - Apr 2026",
+    "category": "Banking / Core Banking / Trade Finance",
+    "summary": "Led QA for the Temenos T24 R24 Trade Finance module at Bank Syariah Indonesia, covering LC, Bank Guarantee, and Trade Finance processes.",
+    "scope": [
+      "Trade Finance module: Letter of Credit (LC), Bank Guarantee (BG), and Trade Finance",
+      "System Integration Testing (SIT) and User Acceptance Testing (UAT)",
+      "Functional, integration, regression, and smoke testing",
+      "Performance testing"
+    ],
+    "workflow": "Requirement/scope review → scenario and test-data preparation → SIT execution → defect logging and triage → fixes and retesting → regression/smoke/integration checks → UAT support → test summary and quality reporting.",
+    "metricsQa": [
+      "Total test cases: Approximately 6,000 scenarios managed",
+      "Pass rate: 80% reported pass; 3% reported fail; remaining 17% not classified in the available source",
+      "Test coverage: Trade Finance module — LC, Bank Guarantee, and Trade Finance; SIT/UAT and functional, integration, regression, smoke, and performance testing",
+      "Bug/fail management: Defects tracked in JIRA; fixes and retesting managed through the QA process. Defect counts and closure rate not documented"
+    ],
+    "tools": [
+      "Temenos T24 R24",
+      "SQL",
+      "JIRA",
+      "JMeter"
+    ],
+    "deliverables": [
+      "Test scenarios and cases",
+      "test data",
+      "defect records",
+      "SIT/UAT execution evidence",
+      "regression and performance test results",
+      "QA status reporting."
+    ],
+    "visualization": "QA metrics dashboard with scenario status, pass/fail/other breakdown, defect lifecycle, module scope (LC/BG/Trade Finance), and SIT/UAT progress.",
+    "documentationImages": [
+    {
+      "src": "assets/images/projects/temenos/dashboard.png",
+      "caption": "QA Dashboard – Test Execution Summary"
+    },
+    {
+      "src": "assets/images/projects/temenos/checklist.png",
+      "caption": "Trade Finance Module – Test Checklist"
+    },
+    {
+      "src": "assets/images/projects/temenos/test-cases.png",
+      "caption": "Test Case Management"
+    },
+    {
+      "src": "assets/images/projects/temenos/pivot.png",
+      "caption": "Test Execution – Pivot Dashboard"
+    }
+  ],
+    "skills": [
+      "QA leadership",
+      "test management",
+      "SIT/UAT",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "smoke testing",
+      "performance testing",
+      "SQL",
+      "JIRA",
+      "JMeter"
+    ]
+  },
+  {
+    "id": "ems",
+    "no": 13,
+    "title": "EMS",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "Apr 2026 - Jun 2026",
+    "category": "Financial Services / Enterprise Application",
+    "summary": "QA testing for PNM’s ESB operations portal, covering API orchestration, service documentation, file management, scheduling, monitoring, and role-based access.",
+    "scope": [
+      "ESB portal modules: user management, orchestration, file management, scheduler, and monitoring",
+      "Role-based access control (RBAC)",
+      "Functional testing of the portal modules in the test-plan scope"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 4 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: User management, orchestration, file management, scheduler, monitoring, and RBAC",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: Katalon Stress test: - Integration : - Database : - Test Management: Jira untuk defect tracking, Qase.io untuk test case management. Link repository automation : http://10.61.4.35/it_qa/esb-ui.git"
+    ],
+    "deliverables": [
+      "Test Plan : Dokumen ini Test Execution Reports SIT, UAT dan TAD (Qase). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "itms",
+    "no": 14,
+    "title": "ITMS",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "Mei 2026 - Jun 2026",
+    "category": "Financial Services / IT Management System",
+    "summary": "",
+    "scope": [],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not documented in the available test plan",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage:",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [],
+    "deliverables": [],
+    "visualization": "",
+    "skills": []
+  },
+  {
+    "id": "beasiswa",
+    "no": 15,
+    "title": "Beasiswa",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "Mei 2026 - Jun 2026",
+    "category": "Financial Services / Scholarship System",
+    "summary": "",
+    "scope": [],
+    "workflow": "",
+    "metricsQa": [
+      "Total test cases: Not documented in the available test plan",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage:",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [],
+    "deliverables": [],
+    "visualization": "",
+    "skills": []
+  },
+  {
+    "id": "integrasi-data-karyawan-hris-x-mekaar-digi",
+    "no": 16,
+    "title": "Integrasi Data Karyawan - HRIS x Mekaar Digi",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "Jun 2026 - Jul 2026",
+    "category": "Financial Services / HRIS Integration",
+    "summary": "QA for employee-data integration between HRIS and Mekaar Digi, validating the integration flow and data exchange with BR.Net through the ESB middleware.",
+    "scope": [
+      "API authentication and authorization",
+      "Customer-profile update request from Mekaar Digi through ESB to BR.Net",
+      "Mandatory-field and payload-format validation",
+      "Stored-procedure execution and data-integrity checks where specified in the plan"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 5 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: API authentication/authorization and customer-profile update integration between Mekaar Digi, ESB, and BR.Net",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: Jira untuk defect tracking, Qase.io untuk test case management. Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan. Test Scripts (Postman). Test Execution Reports SIT, Regression, UAT dan TAD (Newman). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "slik-ojk-automated-reporting",
+    "no": 17,
+    "title": "Slik OJK - Automated Reporting",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "July 1, 2026 → October 11, 2026",
+    "category": "Financial Services / Regulatory Reporting",
+    "summary": "QA for the SLIK OJK Auto Reporting system, focusing on data-readiness checks, report generation, report history, and status monitoring.",
+    "scope": [
+      "Data-readiness verification and detail display",
+      "Product, month, and year filters",
+      "Conventional and sharia data-readiness status and progress calculation",
+      "SLIK report generation, history, detail, download, refresh, and status handling"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 51 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Data readiness, report generation, report history, filtering, download, and report-status handling",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: - Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan. Test Cases (Qase.io). Test Execution Reports SIT, Regression, UAT dan TAD (Qase.io). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "digital-accounting-rekonsiliasi-rak-fase-3",
+    "no": 18,
+    "title": "Digital Accounting - Rekonsiliasi RAK - Fase 3",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "July 6, 2026 → September 29, 2026",
+    "category": "Financial Services / Digital Accounting / Reconciliation",
+    "summary": "QA for Phase 3 Digital Accounting enhancements covering account comparison, bank-data upload, dashboard and master data, and job-trigger processing.",
+    "scope": [
+      "Account Comparison: Detail Account Comparison feature",
+      "Bank Balance: Bank Data Upload feature",
+      "Master Data: Dashboard and Master Data pages",
+      "Job Trigger Console: data retrieval for RAK menus"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 13 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Account comparison detail, bank-data upload, dashboard/master data, and job-trigger data retrieval",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: Qase.io dan Jira API testing : Postman dna Newman Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan. Test Cases (Qase.io). Test Execution Reports SIT, Regression, UAT dan TAD (Katalon atau Qase.io). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "pengkinian-data-nasabah-mekar-digi-x-brnet",
+    "no": 19,
+    "title": "Pengkinian Data Nasabah (Mekar Digi x BRNet)",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "July 27, 2026 → September 6, 2026",
+    "category": "Financial Services / Core Banking Integration",
+    "summary": "QA for customer-profile updates from Mekaar Digi to BR.Net through the ESB middleware, including API authentication, validation, and data integrity.",
+    "scope": [
+      "API authentication and authorization",
+      "Customer-profile update endpoint",
+      "Mandatory-field and payload-format validation",
+      "Data update processing from Mekaar Digi through ESB to BR.Net"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 5 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: API authentication/authorization, customer-profile update, payload validation, and BR.Net data update",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: Jira untuk defect tracking, Qase.io untuk test case management. Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan. Test Scripts (Postman). Test Execution Reports SIT, Regression, UAT dan TAD (Newman). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "integrated-accounting-esb-x-oracle-phase-1",
+    "no": 20,
+    "title": "Integrated Accounting ESB x Oracle - Phase 1",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "July 28, 2026 → September 12, 2026",
+    "category": "Financial Services / Accounting Integration",
+    "summary": "QA for Phase 1 accounting integration between surrounding applications and Oracle through the ESB middleware.",
+    "scope": [
+      "VBOX journal-summary submission to Oracle",
+      "REGLA Accounts Payable transaction integration",
+      "ESB authentication, routing, request processing, and Oracle communication",
+      "Oracle batch feedback processing and callback routing to source applications"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 15 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: VBOX and REGLA/FMS-to-Oracle integration, ESB orchestration, batch feedback, and callback routing",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: JMeter dan K6 Test Management: Jira untuk defect tracking API Testing : Postman Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan. Test Cases (Qase.io). Test Scripts (Katalon untuk automated regression testing, k6.io untuk performance)(opsional). Test Execution Reports SIT, Regression, UAT dan TAD (Katalon atau Qase.io). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "enhancement-recoll-phase-2",
+    "no": 21,
+    "title": "Enhancement Recoll - Phase 2",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "August 21, 2026 → September 16, 2026",
+    "category": "Financial Services / Recovery Collection System",
+    "summary": "QA for Recoll Phase 2 enhancements to regional master data, branch and head-office user management, administrator roles, and regression coverage.",
+    "scope": [
+      "Create, read, update, and delete Regional Master data",
+      "Update PNM Branch and ULaMM Unit data, including merger/migration",
+      "Branch and Head Office User Management, including HRIS synchronization",
+      "Administrator role assignment",
+      "Regression testing of existing Phase 1 features"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 1 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Regional Master CRUD, branch/unit updates, user management, HRIS synchronization, administrator roles, and Phase 1 regression",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Management: Qase.io (test case management, test run, execution report). Defect Management: Jira (defect tracking, priority: Stopper / High / Medium / Low)."
+    ],
+    "deliverables": [
+      "Dokumen Test Plan (dokumen ini). Test Cases (test cases di Qase.io, traceable ke BRD). Test Execution Reports SIT, UAT, dan TAD (dari Katalon / Qase.io). Defect Reports (Jira & Qase.io) dengan severity/priority terisi lengkap. Sign-off document dari stakeholder pasca-UAT."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "peniriman-data-nasabah-mekaar-untuk-keperluan-integrasi-sapa-umkm-kementrian-umkm",
+    "no": 22,
+    "title": "Peniriman Data Nasabah Mekaar untuk Keperluan Integrasi SAPA UMKM (Kementrian UMKM)",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "August 31, 2026 → October 9, 2026",
+    "category": "Government Integration / MSME Data",
+    "summary": "QA for automated customer-data delivery from a staging database to SAPA UMKM through an API and S3 integration.",
+    "scope": [
+      "Validate customer data, including mandatory NIK",
+      "Generate and export CSV with the specified structure and delimiter",
+      "Validate scheduler, request key, and S3 path",
+      "Upload CSV to SAPA UMKM S3 and validate retry/logging behavior",
+      "Validate processing of active and inactive customers and large data volumes"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 2 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Customer data validation, CSV generation, scheduler, S3 upload, retry/logging, and high-volume data processing",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: Jira untuk defect tracking, Qase.io untuk test case management. Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan Test Execution Reports SIT, UAT dan TAD (Qase). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "mutasi-rekening-bri-cms-x-brnet",
+    "no": 23,
+    "title": "Mutasi rekening BRI - CMS x BRNet",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "September 7, 2026 → October 12, 2026",
+    "category": "Banking / Transaction Integration",
+    "summary": "QA for automated BRI account-mutation delivery to BR.Net through API retrieval, data transformation, and scheduled integration.",
+    "scope": [
+      "Validate ESB authentication",
+      "Retrieve BRI account-mutation data through API",
+      "Validate retrieved mutation data in MongoDB",
+      "Validate scheduled delivery to BR.Net",
+      "Validate remark transformation and data in the BR.Net staging database"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: Not documented in the available test plan",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: ESB authentication, BRI mutation API, MongoDB validation, scheduler, transformation, and BR.Net staging",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: Jira untuk defect tracking, Qase.io untuk test case management, Postman untuk API testing. Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan Test Execution Reports SIT, UAT dan TAD (Qase). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "enhancement-recoll-phase-3",
+    "no": 24,
+    "title": "Enhancement Recoll - Phase 3",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "September 28, 2026 → October 16, 2026",
+    "category": "Financial Services / Recovery Collection System",
+    "summary": "QA for Recoll Phase 3 enhancements, including regional mapping, user management, administrator roles, and regression testing.",
+    "scope": [
+      "Create, read, update, and delete Regional Master data",
+      "Update PNM Branch and ULaMM Unit data",
+      "Branch and Head Office User Management, including HRIS synchronization",
+      "Administrator role assignment",
+      "Regression testing of existing Phase 1 features"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 2 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Regional Master and user-management enhancements, administrator roles, and Phase 1 regression",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Management: Qase.io (test case management, test run, execution report). Defect Management: Jira (defect tracking, priority: Stopper / High / Medium / Low)."
+    ],
+    "deliverables": [
+      "Dokumen Test Plan (dokumen ini). Test Cases (test cases di Qase.io, traceable ke BRD). Test Execution Reports SIT, UAT, dan TAD (dari Katalon / Qase.io). Defect Reports (Jira & Qase.io) dengan severity/priority terisi lengkap. Sign-off document dari stakeholder pasca-UAT."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "integrated-accounting-esb-x-oracle-phase-2",
+    "no": 25,
+    "title": "Integrated Accounting ESB x Oracle - Phase 2",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "October 2, 2026 → October 9, 2026",
+    "category": "Financial Services / Accounting Integration",
+    "summary": "QA for Phase 2 accounting integration between FMS and Oracle through ESB orchestration and Oracle Integration Service feedback processing.",
+    "scope": [
+      "Integrate FMS transactions with Oracle through ESB",
+      "Cover reimbursement, advance payment, invoice, and Accounts Payable transactions",
+      "Validate ESB authentication, routing, request processing, and Oracle communication",
+      "Validate batch feedback processing and callback routing to source applications"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 13 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: FMS-to-Oracle transactions, ESB orchestration, Oracle Integration Service batch feedback, and callbacks",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: tidak ada stress test Test Management: Jira untuk defect tracking API testing : Postman Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan. Test Cases (Qase.io). Test Scripts (Katalon untuk automated regression testing, k6.io untuk performance)(opsional). Test Execution Reports SIT, Regression, UAT dan TAD (Katalon atau Qase.io). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "mekar-tumbuh-perubahan-biaya-layanan",
+    "no": 26,
+    "title": "Mekar Tumbuh - Perubahan Biaya Layanan",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "October 21, 2026 → November 6, 2026",
+    "category": "Financial Services / Loan Service Fee",
+    "summary": "QA for Mekaar Tumbuh service-fee changes across financing documents and product information for conventional and sharia products.",
+    "scope": [
+      "Mekaar 8% program information",
+      "RIPLAY (Product and Service Information Summary)",
+      "FP4/FP4S, FP3R/FP3RS, and companion products",
+      "Validate service-fee display, Rupiah formatting, and PDF content"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: Not documented in the available test plan",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Service-fee information across Mekaar 8%, RIPLAY, FP4/FP4S, FP3R/FP3RS, and companion products; UI/PDF validation",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: Qase.io dan Jira API testing : Postman dan Newman Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan : Dokumen ini Test Cases : Postman Collection Test Execution Reports SIT, Regression, UAT dan TAD (Postman atau Qase.io). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "integrasi-ebs-oracle-x-sipadu",
+    "no": 27,
+    "title": "Integrasi EBS Oracle x SIPADU",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "October 21, 2026 → November 6, 2026",
+    "category": "Financial Services / Accounting Integration",
+    "summary": "QA for ESB SIPADU–Oracle integration, validating API authentication and five Oracle/SIPADU service endpoints.",
+    "scope": [
+      "Validate ESB API authentication, including HMAC-SHA256 signature handling",
+      "Test the token endpoint",
+      "Test GL Detail endpoint",
+      "Test Ending Balance endpoint in monthly and daily modes",
+      "Test Prepayment endpoint",
+      "Positive, negative, and boundary API scenarios"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: Not documented in the available test plan",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Five SIPADU–Oracle API endpoints: token, GL Detail, monthly/daily Ending Balance, and Prepayment",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: Postman + Newman (CLI) untuk eksekusi API test (folder Positive, Negative, Boundary). JSON reporter dapat di-pipe ke Qase.io via API untuk sinkronisasi hasil. Stress test: k6.io (opsional, follow-up — belum di-scope v1.0). Test Management: Qase.io (project: ESB SIPADU",
+      "file import: ESB_SIPADU_Oracle_Qase_Import.json",
+      "6 suites, 60"
+    ],
+    "deliverables": [
+      "Test Plan. (dokumen ini: Test_Plan_ESB_SIPADU_Oracle_v1.0.docx) Test Cases (Qase.io). File: ESB_SIPADU_Oracle_Qase_Import.json (6 suites, 60 cases, inisial QA: MDU). Test Scripts: Postman Collection ESB_SIPADU_Oracle_v1.3.postman_collection.json (24 request — 5 positive, 14 negative, 5 boundary) + Pre-request Script HMAC signature generator. k6.io stress script: opsional (follow-up). Test Execution Reports SIT, UAT, TAD: ter-generate via Newman Defect Reports: Jira project ESB-SIPADU (priority: Stopper/High/Medium/Low) dengan link balik ke Qase"
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "digital-accounting-rekonsiliasi-rak-fase-4",
+    "no": 28,
+    "title": "Digital Accounting - Rekonsiliasi RAK - Fase 4",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "October 27, 2026 → November 6, 2026",
+    "category": "Financial Services / Digital Accounting / Reconciliation",
+    "summary": "QA for Phase 4 Digital Accounting enhancements covering account comparison, bank-data upload, and the bank-balance dashboard.",
+    "scope": [
+      "Account Comparison: Detail feature",
+      "Bank Balance: bank-data upload using the document template",
+      "Dashboard: bank-balance dashboard",
+      "Regression testing for the stated in-scope features"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 37 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Account comparison detail, bank-data upload template, bank-balance dashboard, and scoped regression",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: Qase.io dan Jira API testing : - Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan. Test Cases (Qase.io). Test Execution Reports SIT, Regression, UAT dan TAD (Katalon atau Qase.io). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "warung-mekar-penambahan-parameter-validasi-ketua-kelompok",
+    "no": 29,
+    "title": "Warung Mekar - Penambahan Parameter Validasi Ketua Kelompok",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "October 27, 2026 → November 30, 2026",
+    "category": "Financial Services / Customer Validation",
+    "summary": "QA for Warung Mekaar eligibility validation using PKM attendance, face-detection results, and customer group-leader status.",
+    "scope": [
+      "Regression testing of the Customer Detail API",
+      "Validate eligibility parameters based on PKM attendance",
+      "Validate face-detection result",
+      "Validate customer status as group leader",
+      "Validate the isValidWM response used for Warung Mekaar access"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 19 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Customer Detail API regression and Warung Mekaar eligibility parameters: PKM attendance, face detection, group-leader status",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Test Management: Jira API testing : Postman dan Newman Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan : Dokumen ini Test Cases : Qase.io Test Script : Warung Mekaar - API Testing Nasabah.postman_collection Test Execution Reports SIT, Regression, UAT dan TAD : Report Newman Defect Reports : Jira Ticket"
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "transfer-rp1-bri-dormant",
+    "no": 30,
+    "title": "Transfer Rp1 - BRI Dormant",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "November 4, 2026 → November 13, 2026",
+    "category": "Banking / Dormant Account Transfer",
+    "summary": "QA for the automated Rp1 transfer process for eligible dormant BRI accounts, including customer-data validation and transaction-status monitoring.",
+    "scope": [
+      "Retrieve customer/account data from Mekaar Digi and BR.Net",
+      "Select records based on account status; the updated rule excludes statuses 30, 32, and 33",
+      "Execute the Rp1 transfer through the worker job",
+      "Monitor transaction status and processing results"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: Not documented in the available test plan",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: Dormant-account selection rule, Rp1 transfer processing, and transaction-status monitoring",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - Stress test: - Integration Test: Elastic (Log Monitoring) Database : IP : 10.60.2.14 user : qa pass : QaMembara#123 db : db_funding_worker Test Management: Jira untuk defect tracking, Qase.io untuk test case management. Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan Test Execution Reports SIT, UAT dan TAD (Qase). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "esb-portal-fase-1",
+    "no": 31,
+    "title": "ESB Portal - Fase 1",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "November 6, 2026 → November 27, 2026",
+    "category": "Financial Services / ESB Portal",
+    "summary": "QA for ESB Portal Phase 1, covering user management, orchestration, file management, scheduler, and monitoring modules.",
+    "scope": [
+      "User management and role-based access",
+      "API/service orchestration",
+      "File management and file operations",
+      "Scheduler management",
+      "Monitoring functions and role-specific access control"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 4 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: ESB Portal Phase 1: user, orchestration, file, scheduler, and monitoring modules with role-based access",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: Katalon Stress test: - Integration : - Database : - Test Management: Jira untuk defect tracking, Qase.io untuk test case management. Link repository automation : http://10.61.4.35/it_qa/esb-ui.git"
+    ],
+    "deliverables": [
+      "Test Plan : Dokumen ini Test Execution Reports SIT, UAT dan TAD (Qase). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
+  },
+  {
+    "id": "sinkronisasi-data-dengan-dukcapil",
+    "no": 32,
+    "title": "Sinkronisasi data dengan dukcapil",
+    "roleCategory": "Quality Assurance",
+    "company": "PT. PNM",
+    "period": "November 13, 2026 → November 30, 2026",
+    "category": "Government Data Integration",
+    "summary": "QA for HRIS integration with Dukcapil through middleware to validate employee NIKs and retrieve identity data automatically.",
+    "scope": [
+      "Validate API request and response",
+      "Validate API contract compliance",
+      "Validate middleware business logic",
+      "Handle quota and rate limits",
+      "Validate cache handling and Dukcapil API integration",
+      "Validate retry, staging, logging, and failed-transaction handling"
+    ],
+    "workflow": "Review test plan and requirements → prepare test scenarios and data → execute the in-scope functional/integration tests → record and retest defects → perform regression/UAT/deployment testing where specified → report test status.",
+    "metricsQa": [
+      "Total test cases: 4 points listed under the test plan's Objective section",
+      "Pass rate: Not documented; the test plan defines planned testing and acceptance criteria, not execution results",
+      "Test coverage: API contract, middleware logic, Dukcapil integration, quota/rate limits, cache, retry, staging, logging, and failure handling",
+      "Bug/fail management: Defect counts and closure results are not documented in the available test plan"
+    ],
+    "tools": [
+      ": Test Automation: - API Testing : Stress test: - Integration : - Database : - Test Management: Jira untuk defect tracking, Qase.io untuk test case management. Link repository automation : -"
+    ],
+    "deliverables": [
+      "Test Plan : Dokumen ini Test Execution Reports SIT, UAT dan TAD (Newman). Defect Reports (Jira & Qase.io)."
+    ],
+    "visualization": "Test coverage / integration-flow visualization based on the in-scope features in the test plan; no execution-result chart unless actual results are available.",
+    "skills": [
+      "Test planning",
+      "test scenario design",
+      "functional testing",
+      "integration testing",
+      "regression testing",
+      "defect management",
+      "test reporting"
+    ]
   }
 ]

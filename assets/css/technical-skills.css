@@ -1,0 +1,413 @@
+/* ==========================================================
+   PAGE 06 — TECHNICAL SKILLS
+   Scoped to .tech-* classes; inherits the V4 design tokens,
+   page shell, typography, and navigation from v4.css.
+   ========================================================== */
+
+.tech-hero {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr) minmax(250px, .72fr);
+    align-items: center;
+    gap: 34px;
+    padding: 4px 0 38px;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.tech-hero-index {
+    min-height: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 24px;
+    border-right: 1px solid var(--line);
+}
+
+.tech-eyebrow,
+.tech-hero .eyebrow {
+    margin: 0;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.tech-hero-index strong {
+    color: var(--accent);
+    font: 500 92px/.85 Georgia, serif;
+    letter-spacing: -5px;
+}
+
+.tech-hero-title .eyebrow {
+    margin-bottom: 13px;
+}
+
+.tech-hero-title h1 {
+    margin: 0;
+    color: var(--ink);
+    font: 800 clamp(48px, 6vw, 76px)/.94 "Manrope", sans-serif;
+    letter-spacing: -.065em;
+}
+
+.tech-hero-title h1 span {
+    color: #8c877f;
+}
+
+.tech-hero-description {
+    max-width: 360px;
+    justify-self: end;
+    margin: 0;
+    color: #5e5a54;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.tech-skill-list {
+    border-bottom: 1px solid var(--ink);
+}
+
+.tech-skill-row {
+    display: grid;
+    grid-template-columns: 76px 58px minmax(230px, .95fr) minmax(340px, 1.45fr);
+    gap: 22px;
+    align-items: center;
+    padding: 17px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.tech-skill-row:last-child {
+    border-bottom: 0;
+}
+
+.tech-row-number {
+    color: #918b83;
+    font: 500 43px/.95 Georgia, serif;
+    letter-spacing: -2px;
+}
+
+.tech-row-icon {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    border-right: 1px solid var(--line);
+    padding-right: 18px;
+    box-sizing: content-box;
+}
+
+.tech-row-icon svg {
+    width: 37px;
+    height: 37px;
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.tech-row-copy {
+    min-width: 0;
+}
+
+.tech-row-copy h2 {
+    margin: 0 0 4px;
+    color: var(--ink);
+    font: 800 19px/1.25 "Manrope", sans-serif;
+    letter-spacing: -.035em;
+}
+
+.tech-row-copy p {
+    max-width: 390px;
+    margin: 0;
+    color: #5e5a54;
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.tech-row-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+    padding-left: 22px;
+    border-left: 1px solid var(--line);
+}
+
+.tech-tag {
+    display: inline-flex;
+    min-height: 34px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 6px 11px;
+    border: 1px solid #d5d0c7;
+    border-radius: 999px;
+    color: #514d47;
+    background: rgba(255,255,255,.18);
+    font-size: 10px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.tech-tag img {
+    display: block;
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+    flex: 0 0 17px;
+}
+
+.tech-platforms {
+    display: grid;
+    grid-template-columns: 175px minmax(0, 1fr);
+    gap: 28px;
+    align-items: stretch;
+    padding: 28px 0 8px;
+}
+
+.tech-platform-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 22px;
+    border-right: 1px solid var(--line);
+}
+
+.tech-platform-heading .eyebrow {
+    margin: 0 0 10px;
+    color: var(--muted);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+
+.tech-platform-heading h2 {
+    margin: 0;
+    color: var(--ink);
+    font: 800 21px/1.15 "Manrope", sans-serif;
+    letter-spacing: -.045em;
+}
+
+.tech-platform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.tech-platform-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 0;
+    min-height: 82px;
+    padding: 14px 12px;
+    background: #f1efe9;
+}
+
+.tech-platform-logo {
+    display: block;
+    width: 52px;
+    max-height: 30px;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
+
+.tech-platform-mark {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    border: 1px solid #bdb7ad;
+    border-radius: 50%;
+    color: #5c574f;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.tech-platform-item h3 {
+    margin: 0 0 2px;
+    color: var(--ink);
+    font: 800 12px/1.35 "Manrope", sans-serif;
+}
+
+.tech-platform-item p {
+    margin: 0;
+    color: #5e5a54;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.tech-disclaimer {
+    max-width: 760px;
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+/* Tablet */
+@media (max-width: 1050px) {
+    .tech-hero {
+        grid-template-columns: 115px minmax(0, 1fr) minmax(190px, .7fr);
+        gap: 24px;
+    }
+
+    .tech-skill-row {
+        grid-template-columns: 58px 42px minmax(190px, .9fr) minmax(270px, 1.2fr);
+        gap: 15px;
+    }
+
+    .tech-row-icon {
+        width: 40px;
+        padding-right: 12px;
+    }
+
+    .tech-row-icon svg {
+        width: 31px;
+        height: 31px;
+    }
+
+    .tech-row-tags {
+        gap: 6px;
+        padding-left: 15px;
+    }
+
+    .tech-tag {
+        min-height: 31px;
+        padding: 5px 9px;
+        font-size: 9px;
+    }
+
+    .tech-platforms {
+        grid-template-columns: 140px minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .tech-platform-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .tech-hero {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 18px;
+        padding-bottom: 28px;
+    }
+
+    .tech-hero-index {
+        min-height: 108px;
+        padding-right: 14px;
+    }
+
+    .tech-hero-index strong {
+        font-size: 65px;
+    }
+
+    .tech-hero-title h1 {
+        font-size: clamp(42px, 11vw, 58px);
+    }
+
+    .tech-hero-title .eyebrow {
+        font-size: 8px;
+    }
+
+    .tech-hero-description {
+        grid-column: 2;
+        justify-self: start;
+        margin-top: 2px;
+        font-size: 12px;
+    }
+
+    .tech-skill-row {
+        grid-template-columns: 48px 1fr;
+        gap: 8px 14px;
+        padding: 18px 0;
+    }
+
+    .tech-row-number {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        align-self: start;
+        padding-top: 1px;
+        font-size: 34px;
+    }
+
+    .tech-row-icon {
+        display: none;
+    }
+
+    .tech-row-copy {
+        grid-column: 2;
+    }
+
+    .tech-row-copy h2 {
+        font-size: 17px;
+    }
+
+    .tech-row-copy p {
+        font-size: 11px;
+    }
+
+    .tech-row-tags {
+        grid-column: 2;
+        padding: 10px 0 0;
+        border-left: 0;
+    }
+
+    .tech-tag {
+        min-height: 30px;
+        font-size: 9px;
+    }
+
+    .tech-platforms {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding-top: 25px;
+    }
+
+    .tech-platform-heading {
+        padding: 0 0 13px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .tech-platform-heading h2 br {
+        display: none;
+    }
+
+    .tech-platform-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .tech-platform-item {
+        justify-content: flex-start;
+        min-height: 72px;
+        gap: 9px;
+        padding: 10px;
+    }
+
+    .tech-platform-logo {
+        width: 38px;
+    }
+
+    .tech-platform-item h3 {
+        font-size: 10px;
+    }
+
+    .tech-platform-item p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .tech-platform-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,374 +1,92 @@
-<!-- <section class="page-intro"><p class="eyebrow">WORKSPACE / PROJECTS</p><h1>Selected work &<br><span>quality in practice.</span></h1><p class="lead">Anonymized case studies showing testing challenges, delivery practices, and technical capabilities.</p></section>
-<div class="filter-row">
-    <button class="filter-button selected" data-filter="all">All work</button>
-    <button class="filter-button" data-filter="integration">e-Procurement</button>
-    <button class="filter-button" data-filter="banking">Banking</button>
-    <button class="filter-button" data-filter="api">Finance</button>
-    <button class="filter-button" data-filter="api">Integration</button>
-</div>
-<section class="editorial-list"><?php foreach ($projects as $i => $project): ?>
-<article class="editorial-row project-editorial" data-project-category="<?= e((string)($project['filter'] ?? 'other')) ?>">
-<div class="row-meta"><span><?= e((string)($project['code'] ?? sprintf('CASE-%02d',$i+1))) ?></span><small><?= e((string)($project['category'] ?? 'Case study')) ?></small></div>
-<div class="row-content"><h2><?= e((string)($project['name'] ?? 'Project')) ?></h2><p><?= e((string)($project['summary'] ?? '')) ?></p>
-<?php foreach (['challenge'=>'Challenge','approach'=>'QA approach'] as $key=>$label): if (!empty($project[$key])): ?><div class="detail-block"><h3><?= $label ?></h3><p><?= e((string)$project[$key]) ?></p></div><?php endif; endforeach; ?>
-<?php if (!empty($project['responsibilities'])): ?><div class="detail-block"><h3>Responsibilities</h3><ul><?php foreach ($project['responsibilities'] as $item): ?><li><?= e((string)$item) ?></li><?php endforeach; ?></ul></div><?php endif; ?>
-<div class="tag-list"><?php foreach (($project['skills'] ?? []) as $skill): ?><span><?= e((string)$skill) ?></span><?php endforeach; ?></div></div>
-</article><?php endforeach; ?></section>
-<p class="confidential-note">Project descriptions are generalized for portfolio use. Client data, screenshots, system identifiers, and internal documents should only be published with approval.</p> -->
-
-
 <?php
 /**
- * Projects page
- * Data source: /data/projects.json (loaded by index.php into $projects).
- *
- * Each project may define:
- * - role: qa | sa | dev
- * - filter: category slug, e.g. integration, banking, finance
- * - category: visible category label
- * - code, name, summary, challenge, approach,
- *   responsibilities[], skills[]
- *
- * Existing JSON records without a role default to QA.
+ * Projects listing page.
+ * Data source: data/projects.json (exported from Project_List_Revised_v2.xlsx).
+ * If the main application already loads $projects, that array is reused.
  */
-
-$roleTabs = [
-    'qa' => [
-        'number' => '01',
-        'label' => 'Quality Assurance',
-        'description' => 'Quality engineering, test management, and delivery assurance across business domains.'
-    ],
-    'sa' => [
-        'number' => '02',
-        'label' => 'System Analysis',
-        'description' => 'Translating business needs into requirements, workflows, and system specifications.'
-    ],
-    'dev' => [
-        'number' => '03',
-        'label' => 'Software Development',
-        'description' => 'Building applications and implementing software solutions across different problem domains.'
-    ],
-];
-
-/*
- * Group projects by role.
- */
-$projectsByRole = [
-    'qa' => [],
-    'sa' => [],
-    'dev' => []
-];
-
-foreach ($projects as $project) {
-    $role = (string)($project['role'] ?? 'qa');
-
-    if (array_key_exists($role, $projectsByRole)) {
-        $projectsByRole[$role][] = $project;
-    }
+if (!isset($projects) || !is_array($projects)) {
+    $jsonPath = __DIR__ . '/../data/projects.json';
+    $decoded = is_file($jsonPath) ? json_decode(file_get_contents($jsonPath), true) : [];
+    $projects = is_array($decoded) ? $decoded : [];
 }
+$projectItems = $projects;
+$totalProjects = count($projectItems);
 
-/*
- * Default active role.
- */
-$activeRole = 'qa';
-
-foreach (array_keys($roleTabs) as $roleKey) {
-    if (!empty($projectsByRole[$roleKey])) {
-        $activeRole = $roleKey;
-        break;
-    }
+$categories = [];
+foreach ($projectItems as $item) {
+    $category = trim((string)($item['roleCategory'] ?? 'Other'));
+    $key = strtolower(preg_replace('/[^a-z0-9]+/i', '-', $category));
+    if (!isset($categories[$key])) $categories[$key] = ['label' => $category, 'count' => 0];
+    $categories[$key]['count']++;
+}
+$roles = array_values(array_unique(array_filter(array_map(
+    fn($item) => trim((string)($item['roleCategory'] ?? '')),
+    $projectItems
+))));
+if (!function_exists('project_page_escape')) {
+    function project_page_escape($value) { return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8'); }
 }
 ?>
+<link rel="stylesheet" href="assets/css/projects-page.css">
 
-<link rel="stylesheet" href="assets/css/projects.css">
+<section class="projects-page">
+    <header class="projects-hero">
+        <div class="projects-hero-copy">
+            <div class="projects-eyebrow"><span></span> PROJECTS</div>
+            <h1>Project Experience</h1>
+            <p>A collection of projects across software development, system analysis, and quality assurance.</p>
+        </div>
+        <div class="projects-highlights">
+            <div class="projects-highlight"><strong><?= number_format($totalProjects) ?>+</strong><span>Total Projects</span></div>
+            <div class="projects-highlight"><strong><?= count($roles) ?></strong><span>Professional Roles</span></div>
+        </div>
+    </header>
 
-<section class="projects-page" id="projectsTop">
-
-    <!-- ROLE BOOKMARK NAVIGATION -->
-    <div class="role-bookmarks"
-         role="tablist"
-         aria-label="Projects by professional role">
-
-        <?php foreach ($roleTabs as $roleKey => $tab): ?>
-
-            <button
-                class="role-bookmark<?= $roleKey === $activeRole ? ' is-active' : '' ?>"
-                id="role-tab-<?= e($roleKey) ?>"
-                type="button"
-                role="tab"
-                aria-selected="<?= $roleKey === $activeRole ? 'true' : 'false' ?>"
-                aria-controls="role-panel-<?= e($roleKey) ?>"
-                tabindex="<?= $roleKey === $activeRole ? '0' : '-1' ?>"
-                data-role-tab="<?= e($roleKey) ?>"
-            >
-
-                <svg class="bookmark-icon"
-                     viewBox="0 0 18 24"
-                     aria-hidden="true">
-                    <path d="M2 1.5h14v21L9 17.5l-7 5z"></path>
-                </svg>
-
-                <span class="bookmark-number">
-                    <?= e($tab['number']) ?>
-                </span>
-
-                <span class="bookmark-label">
-                    <?= e($tab['label']) ?>
-                </span>
-
-            </button>
-
-        <?php endforeach; ?>
-
+    <div class="projects-toolbar">
+        <div class="projects-filters" role="group" aria-label="Filter projects">
+            <button class="projects-filter is-active" type="button" data-project-filter="all">All Projects <span><?= $totalProjects ?></span></button>
+            <?php foreach ($categories as $key => $category): ?>
+                <button class="projects-filter" type="button" data-project-filter="<?= project_page_escape($key) ?>">
+                    <?= project_page_escape($category['label']) ?> <span><?= $category['count'] ?></span>
+                </button>
+            <?php endforeach; ?>
+        </div>
+        <label class="projects-search"><span aria-hidden="true">⌕</span><input type="search" id="projectSearch" placeholder="Search project..." aria-label="Search projects"></label>
     </div>
 
-
-    <!-- ROLE CONTENT PANELS -->
-    <?php foreach ($roleTabs as $roleKey => $tab): ?>
-
-        <?php
-        $roleProjects = $projectsByRole[$roleKey];
-        $isActive = $roleKey === $activeRole;
-
-        /*
-         * Generate category filters dynamically
-         * from projects.json for each role.
-         */
-        $categories = [];
-
-        foreach ($roleProjects as $project) {
-
-            $slug = (string)($project['filter'] ?? 'all');
-            $label = (string)($project['category'] ?? 'Case study');
-
-            if ($slug !== 'all' && !isset($categories[$slug])) {
-                $categories[$slug] = $label;
-            }
-        }
+    <div class="projects-grid" id="projectsGrid">
+        <?php foreach ($projectItems as $index => $project):
+            $title = (string)($project['title'] ?? 'Untitled Project');
+            $roleCategory = (string)($project['roleCategory'] ?? 'Other');
+            $filterKey = strtolower(preg_replace('/[^a-z0-9]+/i', '-', $roleCategory));
+            $summary = (string)($project['summary'] ?? '');
+            $company = (string)($project['company'] ?? '');
+            $period = (string)($project['period'] ?? '');
+            $skills = is_array($project['skills'] ?? null) ? $project['skills'] : [];
+            $detailUrl = 'index.php?page=project-detail&id=' . rawurlencode((string)($project['id'] ?? $index));
+            $searchText = strtolower($title . ' ' . $roleCategory . ' ' . ($project['category'] ?? '') . ' ' . $summary . ' ' . $company . ' ' . implode(' ', $skills));
         ?>
-
-        <section
-            class="role-panel<?= $isActive ? ' is-active' : '' ?>"
-            id="role-panel-<?= e($roleKey) ?>"
-            role="tabpanel"
-            aria-labelledby="role-tab-<?= e($roleKey) ?>"
-            <?= $isActive ? '' : 'hidden' ?>
-            data-role-panel="<?= e($roleKey) ?>"
-        >
-
-            <!-- PAGE INTRODUCTION -->
-            <section class="page-intro">
-
-                <p class="eyebrow">
-                    WORKSPACE / PROJECTS
-                </p>
-
-                <h1>
-                    Selected work &amp;<br>
-                    <span>quality in practice.</span>
-                </h1>
-
-                <p class="lead">
-                    Anonymized case studies showing testing challenges,
-                    delivery practices, and technical capabilities.
-                </p>
-
-                <p class="role-description">
-                    <?= e($tab['description']) ?>
-                </p>
-
-            </section>
-
-
-            <!-- CATEGORY FILTERS -->
-            <?php if (!empty($roleProjects)): ?>
-
-                <div class="filter-row"
-                     role="group"
-                     aria-label="Filter <?= e($tab['label']) ?> projects">
-
-                    <button
-                        class="filter-button selected"
-                        type="button"
-                        data-category-filter="all"
-                        aria-pressed="true">
-                        All work
-                    </button>
-
-                    <?php foreach ($categories as $slug => $label): ?>
-
-                        <button
-                            class="filter-button"
-                            type="button"
-                            data-category-filter="<?= e($slug) ?>"
-                            aria-pressed="false">
-                            <?= e($label) ?>
-                        </button>
-
-                    <?php endforeach; ?>
-
+        <article class="projects-card" data-project-card data-category="<?= project_page_escape($filterKey) ?>" data-search="<?= project_page_escape($searchText) ?>">
+            <a class="projects-card-image is-placeholder" href="<?= project_page_escape($detailUrl) ?>" aria-label="View <?= project_page_escape($title) ?>">
+                <span class="projects-image-placeholder"><?= project_page_escape(strtoupper(substr($roleCategory, 0, 2))) ?></span>
+                <span class="projects-card-category"><?= project_page_escape($roleCategory) ?></span>
+            </a>
+            <div class="projects-card-body">
+                <div class="projects-card-company"><?= project_page_escape($company) ?></div>
+                <h2><?= project_page_escape($title) ?></h2>
+                <p><?= project_page_escape($summary) ?></p>
+                <div class="projects-card-meta">
+                    <span><b aria-hidden="true">↗</b><?= project_page_escape($roleCategory) ?></span>
+                    <?php if ($period !== ''): ?><span><b aria-hidden="true">◷</b><?= project_page_escape($period) ?></span><?php endif; ?>
                 </div>
-
-
-                <!-- EDITORIAL PROJECT LIST -->
-                <section class="editorial-list">
-
-                    <?php foreach ($roleProjects as $i => $project): ?>
-
-                        <article
-                            class="editorial-row project-editorial"
-                            data-project-category="<?= e((string)($project['filter'] ?? 'other')) ?>"
-                        >
-
-                            <!-- PROJECT META -->
-                            <div class="row-meta">
-
-                                <span>
-                                    <?= e((string)(
-                                        $project['code']
-                                        ?? sprintf('CASE-%02d', $i + 1)
-                                    )) ?>
-                                </span>
-
-                                <small>
-                                    <?= e((string)(
-                                        $project['category']
-                                        ?? 'Case study'
-                                    )) ?>
-                                </small>
-
-                            </div>
-
-
-                            <!-- PROJECT DETAILS -->
-                            <div class="row-content">
-
-                                <h2>
-                                    <?= e((string)(
-                                        $project['name'] ?? 'Project'
-                                    )) ?>
-                                </h2>
-
-                                <?php if (!empty($project['summary'])): ?>
-
-                                    <p>
-                                        <?= e((string)$project['summary']) ?>
-                                    </p>
-
-                                <?php endif; ?>
-
-
-                                <!-- CHALLENGE & APPROACH -->
-                                <?php
-                                $approachLabel = [
-                                    'qa' => 'QA approach',
-                                    'sa' => 'Analysis approach',
-                                    'dev' => 'Development approach'
-                                ][$roleKey];
-                                ?>
-
-                                <?php foreach ([
-                                    'challenge' => 'Challenge',
-                                    'approach' => $approachLabel
-                                ] as $key => $label): ?>
-
-                                    <?php if (!empty($project[$key])): ?>
-
-                                        <div class="detail-block">
-
-                                            <h3>
-                                                <?= e($label) ?>
-                                            </h3>
-
-                                            <p>
-                                                <?= e((string)$project[$key]) ?>
-                                            </p>
-
-                                        </div>
-
-                                    <?php endif; ?>
-
-                                <?php endforeach; ?>
-
-
-                                <!-- RESPONSIBILITIES -->
-                                <?php if (
-                                    !empty($project['responsibilities'])
-                                    && is_array($project['responsibilities'])
-                                ): ?>
-
-                                    <div class="detail-block">
-
-                                        <h3>Responsibilities</h3>
-
-                                        <ul>
-
-                                            <?php foreach (
-                                                $project['responsibilities']
-                                                as $item
-                                            ): ?>
-
-                                                <li>
-                                                    <?= e((string)$item) ?>
-                                                </li>
-
-                                            <?php endforeach; ?>
-
-                                        </ul>
-
-                                    </div>
-
-                                <?php endif; ?>
-
-
-                                <!-- TECHNOLOGY TAGS -->
-                                <?php if (
-                                    !empty($project['skills'])
-                                    && is_array($project['skills'])
-                                ): ?>
-
-                                    <div class="tag-list">
-
-                                        <?php foreach (
-                                            $project['skills'] as $skill
-                                        ): ?>
-
-                                            <span>
-                                                <?= e((string)$skill) ?>
-                                            </span>
-
-                                        <?php endforeach; ?>
-
-                                    </div>
-
-                                <?php endif; ?>
-
-                            </div>
-
-                        </article>
-
-                    <?php endforeach; ?>
-
-                </section>
-
-            <?php else: ?>
-
-                <div class="role-empty-state">
-                    <p>Projects for this role will be added soon.</p>
+                <div class="projects-card-bottom">
+                    <div class="projects-tags"><?php foreach (array_slice($skills, 0, 3) as $skill): ?><span><?= project_page_escape($skill) ?></span><?php endforeach; ?></div>
+                    <a class="projects-details-link" href="<?= project_page_escape($detailUrl) ?>">View Details <span aria-hidden="true">→</span></a>
                 </div>
-
-            <?php endif; ?>
-
-        </section>
-
-    <?php endforeach; ?>
-
-
-    <!-- CONFIDENTIALITY NOTICE -->
-    <p class="confidential-note">
-        Project descriptions are generalized for portfolio use.
-        Client data, screenshots, system identifiers, and internal
-        documents should only be published with approval.
-    </p>
-
+            </div>
+        </article>
+        <?php endforeach; ?>
+    </div>
+    <div class="projects-empty" id="projectsNoResults" hidden>No projects match your search.</div>
 </section>
+<script src="assets/js/projects.js"></script>
